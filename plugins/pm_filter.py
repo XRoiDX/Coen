@@ -1656,24 +1656,24 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-                InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
-        ], [
-            InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', callback_data='help'),
+        buttons =  [[
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ꜰɪʟᴇꜱ 🧞‍♂️', switch_inline_query_current_chat=''), 
+            ],[
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ɴᴏᴡ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+            ],[
+            InlineKeyboardButton('🙆🏻 Hᴇʟᴘ ', callback_data='help'),
             InlineKeyboardButton('🎁 Hᴇʟᴘ++', callback_data='leech_url_help'),
-        ],[
+            ],[
             InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
             InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
-        ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
-        ],[
+            ],[
+            InlineKeyboardButton('⪦ Uᴩᴅᴀᴛᴇꜱ ⪧', url='https://t.me/zooistore')
+            ],[
             InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
-        ],[
+            ],[
                 InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@LazyDeveloperr'
+                    "🧞‍♀️ Sᴇᴀʀᴄʜ", switch_inline_query_current_chat=''
                 )
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
