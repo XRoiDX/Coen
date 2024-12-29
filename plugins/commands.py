@@ -33,7 +33,7 @@ async def start(client, message):
             [
                 InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('🙈', url='https://t.me/real_MoviesAdda3')
+            InlineKeyboardButton('🙈', url='https://t.me/zooistore')
             ],[
             InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
             ],
@@ -54,9 +54,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ 🧞‍♂️', switch_inline_query_current_chat=''), 
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ꜰɪʟᴇꜱ 🧞‍♂️', switch_inline_query_current_chat=''), 
             ],[
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ɴᴏᴡ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
             ],[
             InlineKeyboardButton('🙆🏻 Hᴇʟᴘ ', callback_data='help'),
@@ -65,7 +65,7 @@ async def start(client, message):
             InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
             InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
+            InlineKeyboardButton('⪦ Uᴩᴅᴀᴛᴇꜱ ⪧', url='https://t.me/zooistore')
             ],[
             InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
             ],[
@@ -116,9 +116,9 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =[[
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ 🧞‍♂️', switch_inline_query_current_chat=''), 
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ꜰɪʟᴇꜱ 🧞‍♂️', switch_inline_query_current_chat=''), 
             ],[
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ɴᴏᴡ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
             ],[
             InlineKeyboardButton('🙆🏻 Hᴇʟᴘ ', callback_data='help'),
@@ -127,7 +127,7 @@ async def start(client, message):
             InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
             InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
+            InlineKeyboardButton('⪦ Uᴩᴅᴀᴛᴇꜱ ⪧', url='https://t.me/zooistore')
             ],[
             InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
             ],[
