@@ -1442,7 +1442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -1463,7 +1463,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -1486,7 +1486,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -1504,7 +1504,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        return await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
     elif query.data == "backcb":
         await query.answer()
 
@@ -1515,7 +1515,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "There are no active connections!! Connect to some groups first.",
             )
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
         buttons = []
         for groupid in groupids:
             try:
@@ -1656,7 +1656,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons =  [[
+        buttons = [[
             InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ꜰɪʟᴇꜱ 🧞‍♂️', switch_inline_query_current_chat=''), 
             ],[
             InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ ɴᴏᴡ', switch_inline_query_current_chat=''),
@@ -1682,7 +1682,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -2399,7 +2399,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('♥️ Thank You LazyDeveloper ♥️')
+    await query.answer('തെറ്റ് ചെയ്യാത്തവർ ആയി ആരുണ്ട് ഗോപു 🫦')
 
 
 async def auto_filter(client, msg, spoll=False):
